@@ -14,6 +14,7 @@
 }
 .btn-primary {
 	background-color: white;
+	border-radius: 8px;
 }
 #sq1, #sq2, #sq3{
 	width: 300px;
@@ -68,4 +69,32 @@ abbr {
 	position: unset;
 	margin-left: 435px;
 	margin-top: 2px;
+}
+.test {
+	height:140px; 
+	border-left:6px solid red;
+	margin-left: 1194px;
+	margin-top: -712px;
+	border-radius: 8px;
+}
+#box {
+	background-color: #105572;
+	font-size: 10px;
+	width: 300px;
+	padding: 10px;
+	margin-left: 1200px;
+	margin-top: -700px;
+	display:block;
+	position:absolute;
+	top: 850px;
+	border-radius: 8px;
+	font-size: 12px;
+	color: white;
+}
+#close {
+	display:block;
+	position:absolute;
+	top:-43px;
+	left:260px;
+	position: relative;
 }
