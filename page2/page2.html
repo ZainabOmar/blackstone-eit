@@ -14,11 +14,13 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<!-- link to the local files -->
 	<link rel="stylesheet" type="text/css" href="./assets/style.css">
-	<script src="./page1.js"></script>
+	<!-- link to json file -->
+	<script type="text/javascript" src="./data.json"></script>
+	<script src="./page2.js"></script>
 </head>
 <body id = "body">
-	<!-- fixed navbar -->
-	<div class="w3-bar" style="height: 50px; background-color: #000067" >
+	<!-- Inbox navbar -->
+	<div id="inboxNav" class="w3-bar" style="height: 50px; background-color: #000067" >
 		<abbr style="color: white; margin-left: 630px; font-size: 20px;" class="w3-bar-item w3-button">Inbox<span style="margin-left: 20px; color: white;" class="glyphicon glyphicon-chevron-down"></span></abbr>
 		<span style="color: white; margin-right: 20px; margin-left: -600px; margin-top: 10px;" class="glyphicon glyphicon-chevron-left"></span>
 		<span style="color: white;" class="glyphicon glyphicon-home"></span>
@@ -35,37 +37,34 @@
 		<abbr style="color:#696969; margin-left: 20px; font-size: 14px;" class="w3-bar-item w3-button">All Items (100)</abbr>
 	</div>
 	<!-- Incoming mails in one div -->
-	<div class="container" style="background-color: white;">
-		<div id="blog" class="row"> 
-
-			<div class="col-sm-3 paddingTop20">
-				<nav class="nav-sidebar">
-					<ul class="nav">
-						<li class="active">
-							<div class="input-append span12">
-								<input class="search-query" type="text" placeholder="Search..." style="background-color: #cfebfd">
-							</div></li>
-							<li><a href="javascript:;">Gulfnews</a></li>
-							<li><a href="javascript:;">Updates</a></li>
-							<li><a href="javascript:;">Training</a></li>
-						</ul>
-					</nav>
+	<div class="row">
+		<!-- Menu -->
+		<div class="side-menu">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					<input type="text" placeholder="Search..." style="background-color: #dbf0fd;">
 				</div>
-				<div class="col-md-10 blogShort">
-					<h1>Title 2</h1>
-					<img src="./assets/man.jpeg" class="pull-left img-responsive thumb margin10 img-thumbnail">
-					<article><p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
-						five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-						of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-						Lorem Ipsum.
-					</p></article>
-					<a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a> 
+				<!-- Main Menu -->
+				<div class="side-menu-container">
+					<ul class="nav navbar-nav">
+						<li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+					</ul>
 				</div>
+			</nav>
+		</div>
 
-				<div class="col-md-12 gap10"></div>
+		<!-- Main Content -->
+		<div class="container-fluid">
+			<div class="side-body">
+				<h1> Main Content here </h1>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				<hr>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 			</div>
 		</div>
-	</body>
-	</html>
+	</div>
+</body>
+</html>
