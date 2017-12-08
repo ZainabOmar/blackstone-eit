@@ -8,15 +8,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- link to bootstrap library "js files" -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- link to font-awesome library -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- link to w3css library -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- link to font-awesome library -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<!-- link to the local files -->
 	<link rel="stylesheet" type="text/css" href="./assets/style.css">
-	<!-- link to json file -->
-	<script type="text/javascript" src="./data.json"></script>
-	<script src="./page2.js"></script>
 </head>
 <body id = "body">
 	<!-- Inbox navbar -->
@@ -46,11 +44,7 @@
 				</div>
 				<!-- Main Menu -->
 				<div class="side-menu-container">
-					<ul class="nav navbar-nav">
-						<li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
-						<li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+					<ul id="title" class="nav navbar-nav">
 					</ul>
 				</div>
 			</nav>
@@ -58,13 +52,34 @@
 
 		<!-- Main Content -->
 		<div class="container-fluid">
-			<div class="side-body">
-				<h1> Main Content here </h1>
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			<div id="description" class="side-body">
+				<h3 id="headquarters"> Adnoc's new headquarters<span style="margin-left: 270px; font-size: 20px; color: #1E90FF;" class="glyphicon glyphicon-paperclip"> 2</span> </h3>
+				<div class="input-group input-group-sm" style="margin-left: 500px;">
+					<span class="input-group-addon" style="background-color: #dbf0fd; border-color:#dbf0fd;"><i  style="background-color: #dbf0fd;" class="fa fa-reply">
+					</i>
+				</span>
+				<input type="text" class="form-control" placeholder="Reply" aria-describedby="sizing-addon2" style=" width: 20%; background-color: #dbf0fd; border-color:#dbf0fd;">
 			</div>
+			<br />
+			<div class="circle" style="background-image: url('./assets/falcon.JPG')">
+			</div><h3 id="gulf">Gulfnews</h3>
+			<div id="details">
+				<p>19:14 November 2, 2016</p>
+				<p>To: adnoc</p>
+				<p>Cc: </p>
+			</div>
+			<div id="images">
+				<img src="./assets/img2.png" width="200" height="130">
+				<img src="./assets/img1.png" width="300" height="130">
+			</div>
+			<br>
+			<span style="margin-left: 80px;">Show all attachements(586 KB)</span><span>Download All</span><span>Save all to OneDrive</span>
+			<hr style="border-width: 2px; color: black;">
+			<p style="font-size: 14px; color: black; margin-top: 20px;">Lorem ipsum sed vehicula suscipit; bibendum enim feugiat ornare sollicitudin? Lorem ipsum mattis ligula consectetur augue eros in mus viverra. Lorem ipsum velit sodales faucibus porttitor vulputate tempor ultrices neque. Lorem ipsum ut proin senectus blandit at, egestas molestie natoque. Lorem ipsum sociis consequat risus lobortis cursus taciti natoque magnis. Lorem ipsum eget fusce nec gravida porttitor curae; dapibus nisi.<br>Metus ipsum consequat id sed curabitur habitant urna phasellus ridiculus vehicula proin. Accumsan nisi posuere amet magnis aliquet molestie ornare id imperdiet erat commodo. Ac, integer nullam nulla lorem lobortis mattis curabitur varius imperdiet vulputate sed. Primis in facilisi erat convallis imperdiet dapibus orci vestibulum eleifend quis dolor. Ultricies semper fusce tempor aliquam ullamcorper quam enim volutpat vitae lacus rutrum. Ipsum scelerisque ultrices tincidunt tincidunt dictum ut sit penatibus phasellus tellus maecenas.<br>Platea euismod mollis, bibendum primis velit eros lobortis pretium risus aptent. Iaculis, pellentesque libero fames bibendum ultrices feugiat eu cubilia est blandit? Eleifend quam adipiscing cum aenean lorem urna inceptos odio lacus phasellus.</p>
+
 		</div>
 	</div>
+</div>
+<script src="./page2.js"></script>
 </body>
 </html>
