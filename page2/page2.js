@@ -27,7 +27,7 @@ function fetch () {
 		                   data[i]['title']+
 		                   "</a>"+
 		                   "<dl style='font-size= 9px;'>"
-		                   + "<span class='glyphicon glyphicon-triangle-right'></span>"+
+		                   + "<i class='fa fa-caret-right' aria-hidden='true'></i>"+
 		                   data[i]['name']+
 		                   "<span style='margin-left: 20px; font-size: 10px;'>"+
 		                    data[i]['time']+"</span>"+
